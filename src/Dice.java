@@ -30,23 +30,3 @@ public class Dice {
         return new String(rollResult + " (total: " + rollTotal + ")");
     }
 }
-
-class Die {
-    private int sides;
-
-    Die(int sides) {
-        this.sides = sides;
-    }
-
-    int getSides() {
-        return this.sides;
-    }
-
-    void setSides(int sides) {
-        this.sides = sides;
-    }
-
-    int roll(Random random) {
-        return random.nextInt(this.sides) + 1;
-    }
-}
